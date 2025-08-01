@@ -18,9 +18,10 @@ def main():
             if event.type == pygame.QUIT:
                 return  
        
+       player.update(dt)
+       
        surface.fill('black')
        player.draw(screen)
-
        pygame.display.flip()
 
        # wait 1/60s between ticks
